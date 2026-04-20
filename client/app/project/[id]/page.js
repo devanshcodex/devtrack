@@ -1,11 +1,11 @@
 'use client';
 import { useEffect, useState } from 'react';
 import { useParams, useRouter } from 'next/navigation';
-import { useAuth } from '@/context/AuthContext';
-import { projectAPI, issueAPI } from '@/services/api';
-import Navbar from '@/components/Navbar';
-import IssueCard from '@/components/IssueCard';
-import Modal from '@/components/Modal';
+import { useAuth } from '../../context/AuthContext';
+import { projectAPI, issueAPI } from '../../services/api';
+import Navbar from '../../components/Navbar';
+import IssueCard from '../../components/IssueCard';
+import Modal from '../../components/Modal';
 import { Plus, ArrowLeft, Loader2, Filter } from 'lucide-react';
 import Link from 'next/link';
 
