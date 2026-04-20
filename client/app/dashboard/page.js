@@ -1,11 +1,11 @@
 'use client';
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
-import { useAuth } from '@/context/AuthContext';
-import { projectAPI } from '@/services/api';
-import Navbar from '@/components/Navbar';
-import ProjectCard from '@/components/ProjectCard';
-import Modal from '@/components/Modal';
+import { useAuth } from '../context/AuthContext';
+import { projectAPI } from '../services/api';
+import Navbar from '../components/Navbar';
+import ProjectCard from '../components/ProjectCard';
+import Modal from '../components/Modal';
 import { Plus, FolderOpen, Loader2 } from 'lucide-react';
 
 const PROJECT_COLORS = ['#6366f1','#8b5cf6','#ec4899','#f59e0b','#10b981','#3b82f6','#ef4444','#14b8a6'];
