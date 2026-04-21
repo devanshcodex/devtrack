@@ -1,8 +1,9 @@
-Set-Content -Path client\next.config.js -Encoding UTF8 -Value '/** @type {import(`next`).NextConfig} */
+/** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
   env: {
-    NEXT_PUBLIC_API_URL: process.env.NEXT_PUBLIC_API_URL || `http://localhost:5000`,
+    NEXT_PUBLIC_API_URL: process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000',
   },
 };
-module.exports = nextConfig;'
+
+module.exports = nextConfig;
